@@ -18,7 +18,7 @@ public class Ex_5_Lista6 {
             contador++;
 
             if (numerosUsuario >= maiorValor){ // se os numeros que irei receber do usuario for maior igual ao meu maior valor
-                maiorValor = numerosUsuario; // o meu maior valor agora será igual aos números recebidos do usuário
+                maiorValor = numerosUsuario; // o meu maior valor agora será igual aos números recebidos do usúario
             }                               // pois agora o meu maior valor será um dos números que o usuario digitar
         } System.out.println("O numéro maior é: " + maiorValor);
     }
