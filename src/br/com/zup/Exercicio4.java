@@ -14,8 +14,9 @@ public class Exercicio4 {
         int contador = 1;
         int numeroDivisor = 0;
 
+// iniciando o while.
         while (contador <= numeroPrimo) {
-
+// iniciando o laço de repetição.
             if (numeroPrimo % contador == 0) {
                 numeroDivisor++;
             }
