@@ -12,13 +12,11 @@ public class Ex_8_Lista6 {
         List<Integer> numeros = new ArrayList<>();
 
         int contador = 1;
-        int numerosTotal = 5;
-        int valorDadoPeloUsuario = 0;
 
 
-        while (contador <= numerosTotal) {
+        while (contador <= 5) {
             System.out.println("Por favor digite um número" + contador + ": ");
-            valorDadoPeloUsuario = leitor.nextInt();
+            int valorDadoPeloUsuario = leitor.nextInt();
 
             numeros.add(valorDadoPeloUsuario); // inicio a minha lista com os numeros escolhido pelo usuario
                 contador++;
