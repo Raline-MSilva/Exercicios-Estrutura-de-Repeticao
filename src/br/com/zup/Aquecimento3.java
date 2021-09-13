@@ -15,14 +15,21 @@ public class Aquecimento3 {
 
         System.out.println("Olá, bem vindo ao Restaurante Cactus!");
 
-        int opcao = 0;
-        int chave = 0;
+        int opcaoDesejada = 0;
+        boolean chaveDesejada = true;
 
-        while (chave == 0){
-            System.out.println("Digite 1: Para cadastrar ");
-            System.out.println("");
-            System.out.println("");
-            System.out.println("");
+        while (chaveDesejada){
+            System.out.println("Digite 1: Para cadastrar um prato");
+            System.out.println("Digite 2: Para exibir a lista de pratos cadastrados");
+            System.out.println("Digite 3: Para excluir um prato pelo nome");
+            System.out.println("Digite 4: Para sair");
+            opcaoDesejada = leitor.nextInt();
+            leitor.nextLine();
+
+            if (opcaoDesejada == 1){
+                System.out.println("Digite o nome do prato");
+            }
+
         }
     }
 }
