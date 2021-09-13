@@ -19,6 +19,9 @@ public class LevelUp_Lista6 {
         String email = leitor.nextLine();
 
         //No final do programa deve ser exibido a lista de alunos cadastrados.
+        //concatenando
+        alunos.put(email, "Nome: " + nome + "." + " Telefone: " + telefone);
+        System.out.println(alunos);
 
 
 
