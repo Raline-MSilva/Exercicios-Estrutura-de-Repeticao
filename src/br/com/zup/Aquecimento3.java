@@ -27,7 +27,27 @@ public class Aquecimento3 {
             leitor.nextLine();
 
             if (opcaoDesejada == 1){
-                System.out.println("Digite o nome do prato");
+                System.out.println("Digite o nome do prato: ");
+                String nomePrato = leitor.nextLine();
+                System.out.println("Escolha os ingredientes: ");
+            }
+            else if (opcaoDesejada == 2) {
+                for (String listaPratos:cardapio.keySet()) {
+                    System.out.println(listaPratos + cardapio.get(listaPratos));
+                }
+            }
+            else if (opcaoDesejada == 3) {
+                System.out.println("Digite o nome do prato que deseja deletar");
+                String deletarPrato = leitor.nextLine();
+                System.out.println("Prato deletado com sucesso!");
+                cardapio.remove(deletarPrato);
+            }
+            else if (opcaoDesejada == 4){
+                System.out.println("Você saiu do Programa");
+                chaveDesejada = false;
+            }
+            else {
+                System.out.println("Favor digite umas das opções do Menu!");
             }
 
         }
