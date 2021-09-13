@@ -17,10 +17,10 @@ public class Aquecimento2 {
 
         System.out.println("Olá, bem vindo ao sistema de candidatos do vestibular!");
 
-        int chaveEscolhida = 0;
+        boolean chaveEscolhida = true;
         int opcaoEscolhida = 0;
 
-        while (chaveEscolhida == 0){
+        while (chaveEscolhida){
             System.out.println("Digite 1: Para cadastrar um novo candidato");
             System.out.println("Digite 2: Para exibir a lista dos candidatos já cadastrados");
             System.out.println("Digite 3: Para excluir um candidato pelo número da sua matrícula");
@@ -51,7 +51,7 @@ public class Aquecimento2 {
             else if (opcaoEscolhida == 4){
                 System.out.println("Você saiu do Sistema!");
                 // pra parar o loop uso um número diferente de 0
-                chaveEscolhida = 1;
+                chaveEscolhida = false;
             }
             else {
                 System.out.println("Por favor digite uma das opções do menu!");
