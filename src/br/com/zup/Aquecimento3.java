@@ -30,10 +30,13 @@ public class Aquecimento3 {
                 System.out.println("Digite o nome do prato: ");
                 String nomePrato = leitor.nextLine();
                 System.out.println("Escolha os ingredientes: ");
+                System.out.println("Separe os ingridientes que deseja com uma vírgula");
+                String ingridientes = leitor.nextLine();
+                cardapio.put(nomePrato, ingridientes);
             }
             else if (opcaoDesejada == 2) {
                 for (String listaPratos:cardapio.keySet()) {
-                    System.out.println(listaPratos + cardapio.get(listaPratos));
+                    System.out.println(listaPratos + ":\t\t" + cardapio.get(listaPratos));
                 }
             }
             else if (opcaoDesejada == 3) {
